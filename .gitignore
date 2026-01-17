@@ -1,0 +1,6 @@
+# Exclude data directories
+data/
+
+# Include compose file
+!docker-compose.yml
+!README.md

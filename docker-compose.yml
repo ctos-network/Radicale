@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  radicale:
+    image: tomsquest/docker-radicale
+    container_name: radicale
+    ports:
+      - "5232:5232"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
